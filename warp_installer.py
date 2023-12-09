@@ -127,7 +127,7 @@ def uninstall_pytorch(is_colab):
   subprocess.run(['pip','uninstall','torchtext','-y'])
   subprocess.run(['pip','uninstall','xformers','-y'])
   if not is_colab:
-    subprocess.run(['conda','uninstall','pytorch', 'torchvision',  
+    subprocess.run(['pip','uninstall','pytorch', 'torchvision',  
     'torchaudio',  'cudatoolkit', 'xformers','-y'])
   return 0
 
